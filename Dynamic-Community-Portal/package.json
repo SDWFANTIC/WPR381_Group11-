@@ -1,0 +1,29 @@
+{
+  "name": "wpr381_group11",
+  "version": "1.0.0",
+  "description": "This is a Web Programming Third year project that uses node.js, express and ejs to create a community portal",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://sdwfantic.github.io/WPR381_Group11/"
+  },
+  "keywords": [
+    "WPR",
+    "express",
+    "ejs",
+    "nodejs"
+  ],
+  "author": "Tiaan Wessels 600164, Ryan Payne 578124, Trevor Tanaka Mutendera 577604, Wynand Du Plessis 576348",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0"
+  }
+}
