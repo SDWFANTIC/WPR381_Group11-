@@ -1,1 +1,10 @@
+<%- include('partials/header') %>
+<h2>About Us</h2>
+<ul>
+  <% team.forEach(member => { %>
+    <li><strong><%= member.name %></strong> - <%= member.role %></li>
+  <% }) %>
+</ul>
+<%- include('partials/footer') %>
+
 
