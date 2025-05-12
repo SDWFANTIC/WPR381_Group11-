@@ -1,0 +1,37 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+main {
+  padding: 2rem;
+}
+
+.events {
+  display: flex;
+  gap: 1rem;
+}
+
+.event img {
+  width: 200px;
+  height: auto;
+}
+.event {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  width: 200px;
+}
