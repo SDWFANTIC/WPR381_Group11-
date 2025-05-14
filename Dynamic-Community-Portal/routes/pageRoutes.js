@@ -7,9 +7,6 @@ router.get('/', (req, res) => {
   res.render('pages/home');
 });
 
-// router.get('/about', (req, res) => {
-//   res.render('pages/about');
-// });
 router.get('/about', (req, res) => {
   const team = [
     {
@@ -35,9 +32,34 @@ router.get('/about', (req, res) => {
 
 
 
+// router.get('/events', (req, res) => {
+//   res.render('pages/events');
+// });
 router.get('/events', (req, res) => {
-  res.render('pages/events');
+  const events = [
+    {
+      title: "Tech Conference 2025",
+      date: "2025-06-20",
+      location: "Johannesburg, South Africa",
+      image: "/images/techConference.jpg"
+    },
+    {
+      title: "Startup Pitch Day",
+      date: "2025-07-10",
+      location: "Cape Town, South Africa",
+      image: "/images/PitchDay.jpg"
+    },
+    {
+      title: "AI & ML Workshop",
+      date: "2025-08-15",
+      location: "Pretoria, South Africa",
+      image: "/images/AIandMLWorkshop.jpg"
+    }
+  ];
+
+  res.render('pages/events', { events });
 });
+
 
 router.get('/contact', (req, res) => {
   res.render('pages/contact');

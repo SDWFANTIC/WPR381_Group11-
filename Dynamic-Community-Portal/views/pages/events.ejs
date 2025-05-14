@@ -1,29 +1,23 @@
-<%- include('../partials/header') %>
+<!-- <%- include('../partials/header') %>
 <h1>Upcoming Events</h1>
 <p>Check out what's happening!</p>
 
-<%
-  const events = [
-    {
-      title: "Tech Conference 2025",
-      date: "2025-06-20",
-      location: "Johannesburg, South Africa",
-      image: "/images/tech-conference.jpg"
-    },
-    {
-      title: "Startup Pitch Day",
-      date: "2025-07-10",
-      location: "Cape Town, South Africa",
-      image: "/images/startup-pitch.jpg"
-    },
-    {
-      title: "AI & ML Workshop",
-      date: "2025-08-15",
-      location: "Pretoria, South Africa",
-      image: "/images/ai-workshop.jpg"
-    }
-  ];
-%>
+
+<div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+  <% events.forEach(event => { %>
+    <div style="border: 1px solid #ccc; padding: 15px; width: 300px; border-radius: 8px; background: #f9f9f9; text-align: center;">
+      <img src="<%= event.image %>" alt="<%= event.title %> Image" style="max-width: 100%; height: auto; border-radius: 5px;" />
+      <h2><%= event.title %></h2>
+      <p><strong>Date:</strong> <%= event.date %></p>
+      <p><strong>Location:</strong> <%= event.location %></p>
+    </div>
+  <% }) %>
+</div>
+
+<%- include('../partials/footer') %> -->
+<%- include('../partials/header') %>
+<h1>Upcoming Events</h1>
+<p>Check out what's happening!</p>
 
 <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
   <% events.forEach(event => { %>
