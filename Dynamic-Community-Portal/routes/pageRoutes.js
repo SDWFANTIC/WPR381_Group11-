@@ -6,6 +6,13 @@ const messages = [];
 // Shared event data
 const events = [
   {
+  title: "Community Hackathon",
+  date: "2025-05-25", 
+  location: "Durban, South Africa",
+  image: "/images/hackathon.jpg"
+},
+
+  {
     title: "Tech Conference 2025",
     date: "2025-06-20",
     location: "Johannesburg, South Africa",
